@@ -8,5 +8,8 @@ TO DO
 	Pedido a domicilio
 		Añadir a NavBar y Footer
 
-
+	Carta:
+		bebidas
+		entrantes
+		postres
 

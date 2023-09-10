@@ -23,15 +23,15 @@
 				<div class="block md:hidden cursor-pointer" @click="MenuToggle()" >
 					<div className="mx-auto z-50 flex w-10 h-10 flex-col justify-between items-center md:hidden py-1 ">
 							<span 
-								class='h-1 w-10 bg-white rounded-lg transform transition duration-300 ease-in-out'
+								class='h-1 w-8 bg-white rounded-lg transform transition duration-300 ease-in-out'
 								:class="[open ? 'rotate-45 translate-y-3.5' : '']"
 							/>
 							<span 
-								class='h-1 w-8 bg-white rounded-lg transition-all duration-300 ease-in-out ' 
-								:class="[open ? 'w-0' : 'w-full']"
+								class='h-1 bg-white rounded-lg transition-all duration-300 ease-in-out ' 
+								:class="[open ? 'w-0' : 'w-10']"
 							/>
 							<span 
-								class='h-1 w-10 bg-white rounded-lg transform transition duration-300 ease-in-out' 
+								class='h-1 w-8 bg-white rounded-lg transform transition duration-300 ease-in-out' 
 								:class="[open ? '-rotate-45 -translate-y-3.5' : '']"
 							/>
 					</div>
