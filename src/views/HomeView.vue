@@ -1,57 +1,59 @@
 <template>
 	<div class="space-y-6">
 		<!-- Pedido a domicilio -->
-		<div class="mx-auto md:max-w-5xl max-w-full rounded border-4 border-white bg-white bg-opacity-20 flex w-full items-center justify-center ">
-			<div class="w-2/3">
-				<img src="/img/burgers/burger1.jpg" alt="burger1">
-			</div>
-			
-			<div class="w-1/3 text-white text-center font-condensed uppercase text-5xl font-bold">
-				Pedido a domicilio
-			</div>
-		</div>
+		<Content1 
+			picture="/img/burgers/burgerMain1.jpg" 
+			pictureAlt="burger1" 
+			text="Pedido a domicilio"
+			buttonText="Pedir"
+			buttonLink="/pide"
+		/>
 
 		<!-- 3 divs -->
-		<div class="flex justify-bettween w-full text-white text-center font-condensed text-4xl uppercase font-bold space-x-6">
-			<div class="w-1/3 rounded border-4 border-white">
-				<div>
-					<img src="/img/burgers/burger1.jpg" alt="burger1">
-				</div>
-				<div class="bg-white text-sky-700 py-4 space-y-4">
-					<div>Reserva tu mesa</div>
-					<router-link class="block font-bold uppercase font-condensed text-2xl px-4 py-2" to="/reserva">Reserva</router-link>
-				</div>
-				
-			</div>
-			<div class="w-1/3 rounded border-4 border-white">
-				<div>
-					<img src="/img/burgers/burger1.jpg" alt="burger1">
-				</div>
-				<div class="bg-white text-sky-700 py-4 space-y-4">
-					<div>Reserva tu mesa</div>
-					<router-link class="block font-bold uppercase font-condensed text-2xl px-4 py-2" to="/reserva">Reserva</router-link>
-				</div>
-				
-			</div>
-			<div class="w-1/3 rounded border-4 border-white">
-				<div>
-					<img src="/img/burgers/burger1.jpg" alt="burger1">
-				</div>
-				<div class="bg-white text-sky-700 py-4 space-y-4">
-					<div>Reserva tu mesa</div>
-					<router-link class="block font-bold uppercase font-condensed text-2xl px-4 py-2" to="/reserva">Reserva</router-link>
-				</div>
-				
-			</div>
+		<div class="md:grid md:grid-cols-3 md:gap-4 space-y-4 px-4 md:space-y-0 md:px-0 w-full text-white text-center align-top font-condensed text-4xl uppercase font-bold">
+			<Content2 
+				picture="/img/restaurant/restaurantInterior.jpg" 
+				pictureAlt="restaurantInterior" 
+				text="Reserva tu mesa"
+				buttonText="Haz tu reserva"
+				buttonLink="/reserva"
+			/>
+
+			<Content2 
+				picture="/img/burgers/burger2.jpg" 
+				pictureAlt="burger2" 
+				text="Burger del mes"
+				buttonText="Ver"
+				buttonLink="/burger-del-mes"
+			/>
+
+			<Content2 
+				picture="/img/burgers/burger3.jpg" 
+				pictureAlt="burger3" 
+				text="Recoge tu pedido"
+				buttonText="Haz tu pedido"
+				buttonLink="/pide"
+			/>
+		</div>
+
+		<div>
+			<CartaButtonComponent />
 		</div>
 	</div>
 </template>
 
 <script>
-import TitleComp from '../components/TitleComp.vue';
+import Content1 from '../components/Content1.vue';
+import Content2 from '../components/Content2.vue';
+import CartaButtonComponent from '../components/CartaButtonComponent.vue';
 
 export default {
-    name: 'HomeView',
-    title: 'Inicio',
+	name: 'HomeView',
+	title: 'Inicio',
+	components: {
+		Content1,
+		Content2,
+		CartaButtonComponent
+	}
 }
 </script>

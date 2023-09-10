@@ -1,6 +1,6 @@
 <template>
 	<div class="bg-sky-700 min-h-screen flex ">
-		<div class="mx-auto flex flex-col w-4/5 max-w-5xl">
+		<div class="mx-auto flex flex-col w-full md:w-4/5 md:max-w-5xl ">
 			<NavBar />
 
 			<div class="flex-1">
