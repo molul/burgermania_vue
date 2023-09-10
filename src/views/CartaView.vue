@@ -1,50 +1,23 @@
 <template>
-	<div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-4 md:p-0">
+	<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4 md:px-0">
 		<div 
 			class="flex flex-col border-4 border-white text-white  "
 			v-for="(burger, index) in burgers" 
 			:key="index" 
 		>
-			<div class="flex flex-col  h-full">
-				<div class="">
-					<img 
-						:src="burger.picture" 
-						:alt="burger.pictureAlt"
-						class="object-cover w-full"
-					>
-				</div>
-
-				<div class="flex items-center justify-between bg-white">
-					<div class="text-sky-700 font-bold text-left font-condensed p-4 text-lg md:text-xl uppercase flex-1">
-						{{ burger.name }}
-					</div>
-					<div class="p-2 text-sky-700 text-base md:text-lg ">
-						{{ burger.price }}€
-					</div>
-				</div>
-
-
-				<div class="flex flex-col h-full">
-					<div class="bg-sky-700 p-4 text-left text-sm md:text-base flex-1">
-						{{ burger.description }}
-					</div>
-	
-					<div class="bg-white p-2 text-sky-700 text-xs md:text-sm italic">
-						<span class="font-bold">Ingredientes: </span>{{ burger.ingredients }}
-					</div>
-				</div>
-
-			</div>
+			<MenuBurgerComp :burger="burger" />
 		</div>
-
 	</div>
 </template>
 
 <script>
+import MenuBurgerComp from '../components/MenuBurgerComp.vue';
+
 export default {
 	name: 'CartaView',
 	title: 'Carta',
 	components: {
+		MenuBurgerComp
 	},
 	data() {
 		return {
