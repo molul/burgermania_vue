@@ -5,7 +5,7 @@
 				<!-- Logo and name -->
 				<div class="flex items-center gap-2">
 					<div class="font-condensed font-bold text-white text-3xl">
-						<router-link class="block font-bold uppercase font-condensed hover:opacity-80 transition-opacity duration-300" to="/">BURGERMANIA</router-link>
+						<router-link class="block font-bold uppercase font-condensed hover:opacity-80 transition-opacity duration-300" to="/">Burgerman<span class="bg-white text-sky-700">ia</span></router-link>
 					</div>
 				</div>
 				<!-- Menu -->
