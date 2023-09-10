@@ -4,6 +4,7 @@ import CartaView from '../views/CartaView.vue'
 import ReservaView from '../views/ReservaView.vue'
 import NosotrosView from '../views/NosotrosView.vue'
 import ContactoView from '../views/ContactoView.vue'
+import PideView from '../views/PideView.vue'
 import BurgerDelMesView from '../views/BurgerDelMesView.vue'
 
 const routes = [
@@ -36,6 +37,11 @@ const routes = [
 		path: '/burger-del-mes',
 		name: 'burger-del-mes',
 		component: BurgerDelMesView
+	},
+	{
+		path: '/pide',
+		name: 'pide',
+		component: PideView
 	},
 ]
 
