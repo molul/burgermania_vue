@@ -8,7 +8,7 @@
 			>
 		</div>
 		
-		<div class="w-full md:w-1/3 text-center space-y-8 flex flex-col py-8">
+		<div class="px-4 w-full md:w-1/3 text-center space-y-8 flex flex-col py-8">
 			<div class="text-sky-700 font-condensed uppercase text-5xl font-bold">
 				{{ text }}
 			</div>

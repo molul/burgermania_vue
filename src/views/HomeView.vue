@@ -42,7 +42,6 @@
 <script>
 import Content1 from '../components/Content1.vue';
 import Content2 from '../components/Content2.vue';
-import CartaButtonComponent from '../components/CartaButtonComponent.vue';
 
 export default {
 	name: 'HomeView',
@@ -50,7 +49,6 @@ export default {
 	components: {
 		Content1,
 		Content2,
-		CartaButtonComponent
 	}
 }
 </script>

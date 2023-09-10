@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
 		fontFamily: {
-			'condensed': ['Barlow Semi Condensed', 'Sans-serif']
+			'condensed': ['Barlow Semi Condensed', 'Sans-serif'],
+			'mainText': ['Raleway', 'Sans-serif']
 		}
   },
   plugins: [],
