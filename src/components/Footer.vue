@@ -4,17 +4,16 @@
 			<div class="flex justify-between mx-auto items-center p-4 w-full">
 				<!-- Logo and name -->
 				<div class="flex items-center gap-2">
-					<img src="/logo.png" />
-					<div class="font-condensed font-bold text-white text-5xl">BURGERMANIA</div>
+					<div class="font-condensed font-bold text-white text-xl">BURGERMANIA</div>
 				</div>
 				<!-- Menu -->
 				<div class="flex space-x-4">
 					<div 
-						class="flex border-4 border-white rounded text-white hover:bg-white hover:text-sky-700 transform duration-300"
+						class="flex text-white hover:bg-white hover:text-sky-700 transform duration-300"
 						v-for="(item, index) in navigationItems" 
 						:key="index" 
 					>
-						<router-link class="block font-bold uppercase font-condensed text-2xl px-4 py-2" :to="item.link">{{ item.label }}</router-link>
+						<router-link class="block font-bold uppercase font-condensed text-lg px-4 py-2" :to="item.link">{{ item.label }}</router-link>
 					</div>
 				</div>
 			</div>

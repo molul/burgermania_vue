@@ -1,20 +1,26 @@
 <template>
 	<div class="bg-sky-700 min-h-screen flex ">
-		<div class="mx-auto flex flex-col w-4/5 max-w-4xl">
+		<div class="mx-auto flex flex-col w-4/5 max-w-5xl">
 			<NavBar />
-			<div class="bg-white flex-1">
-				content
+
+			<div class="flex-1">
 				<router-view/>
 			</div>
+
+			<Footer />
 		</div>
 	</div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
+import Footer from './components/Footer.vue';
 
 export default {
 	name: "AppComponent",
-	components: { NavBar},
+	components: { 
+		NavBar,
+		Footer,
+	},
 }
 </script>
