@@ -2,11 +2,11 @@
 	<div class="space-y-6">
 		<!-- Pedido a domicilio -->
 		<Content1 
-			picture="/img/burgers/burgerMain1.jpg" 
+			picture="/img/burgers/burgerMain2.jpg" 
 			pictureAlt="burger1" 
-			text="Pedido a domicilio"
-			buttonText="Pedir"
-			buttonLink="/pide"
+			text="¿Qué te apetece hoy?"
+			buttonText="Ver carta"
+			buttonLink="/carta"
 		/>
 
 		<!-- 3 divs -->
@@ -20,7 +20,7 @@
 			/>
 
 			<Content2 
-				picture="/img/burgers/burger2.jpg" 
+				picture="/img/burgers/burgerMain1.jpg" 
 				pictureAlt="burger2" 
 				text="Burger del mes"
 				buttonText="Ver"
@@ -36,9 +36,6 @@
 			/>
 		</div>
 
-		<div>
-			<CartaButtonComponent />
-		</div>
 	</div>
 </template>
 

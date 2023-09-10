@@ -1,6 +1,6 @@
 <template>
 	<nav>
-		<div class="w-full flex justify-start text-left pb-16">
+		<div class="w-full flex justify-start text-left pt-6">
 			<div class="px-4 py-4 md:px-0 w-full space-y-4 md:flex md:justify-between md:items-center md:space-y-0 ">
 				<!-- Logo and name -->
 				<div class="flex items-center gap-2">
@@ -28,10 +28,10 @@ export default {
 	data() {
 		return {
 			navigationItems: [
-			{ label: 'Carta', link: '/carta' },
-			{ label: 'Reserva', link: '/reserva' },
-			{ label: 'Pide', link: '/pide' },
-			{ label: 'Nosotros', link: '/nosotros' },
+				{ label: 'Carta', link: '/carta' },
+				{ label: 'Reserva', link: '/reserva' },
+				{ label: 'Nosotros', link: '/nosotros' },
+				{ label: 'Contacto', link: '/contacto' },
 			]
 		}
 	}
