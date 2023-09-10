@@ -1,6 +1,4 @@
 TO DO
-	MobileMenu
-
 	Contacto
 
 	Reserva
