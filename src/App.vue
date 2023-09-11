@@ -1,7 +1,9 @@
 <template>
-	<div class="bg-sky-700 min-h-screen flex flex-col font-mainText">
-		<div class="mx-auto flex flex-col w-full md:w-4/5 md:max-w-5xl ">
-			<NavBar />
+	<div class="bg-sky-700 min-h-screen flex flex-col font-mainText ">
+		<div class="flex-1 h-full mx-auto flex flex-col w-full md:w-4/5 md:max-w-5xl ">
+			<div>
+				<NavBar />
+			</div>
 
 			<div class="
 					w-full
@@ -10,13 +12,18 @@
 					items-center
 					break-words
 					mt-16
-					md:mt-20
-					pt-2
+					md:mt-24
+					
+					flex
+					flex-grow
+					bg-white
 			">
 				<router-view/>
 			</div>
 
-			<Footer />
+			<div>
+				<Footer />
+			</div>
 		</div>
 	</div>
 </template>

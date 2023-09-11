@@ -1,11 +1,11 @@
 <template>
-	<div class="bg-white text-sky-700 p-4 h-full">
+	<div class="bg-white text-sky-700 p-4">
 		<div class="md:w-3/5 mx-auto">
 
 			<TitleComp title="Contacto" />
 
 			<!-- Form -->
-			<div v-if="formVisible">
+			<div v-if="formVisible" class="text-sm md:text-base">
 				<form @submit.prevent="submitForm">
 					<div class="flex flex-col mx-auto space-y-4 ">
 						<div>
@@ -47,9 +47,9 @@
 						<div class="text-center">
 							<button 
 								type="submit"
-								class="  bg-sky-700 px-4 py-2 rounded text-white hover:bg-sky-600 transition-colors duration-300"
+								class="border-4 border-sky-700 bg-white text-sky-700 px-8 py-2 font-condensed text-xl uppercase font-bold hover:bg-sky-700 hover:text-white transition-colors duration-200"
 							>
-								Send Message
+								Enviar
 							</button>
 						</div>
 					</div>

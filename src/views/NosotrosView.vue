@@ -1,5 +1,5 @@
 <template>
-	<div class="space-y-4 h-full text-sky-800 px-4 md:px-0">
+	<div class="space-y-4 bg-sky-700 h-full text-sky-800 px-4 md:px-0">
 		<div class="p-0 md:p-0 space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-4">
 			<div class="border-4 border-white bg-sky-600 text-white font-condensed text-3xl flex items-center justify-center font-bold p-4 text-center uppercase">
 				Acerca de nosotros

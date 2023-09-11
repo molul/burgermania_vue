@@ -1,5 +1,5 @@
 <template>
-	<div class="space-y-4 h-full text-sky-800 px-4 md:px-0">
+	<div class="space-y-4 h-full text-sky-800 px-4 md:px-0 bg-sky-700">
 		<div class="mx-auto md:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col md:flex-row w-full items-center justify-center ">
 			<div class="w-full md:w-2/3 ">
 				<img 
