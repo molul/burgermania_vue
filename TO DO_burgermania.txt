@@ -1,5 +1,8 @@
 TO DO
 	Reserva
+		Queda la función de confirmar
+			Ocultar todo y mostrar mensaje
+				Hacer con una transición que parezca que ha cargado algo
 
 	Pedido a domicilio
 		Añadir a NavBar y Footer

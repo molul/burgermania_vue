@@ -33,22 +33,64 @@
 				</div>
 			</div>
 
-			<div class="py-4">
-				<div>Elige fecha</div>
+			<div class="py-4 text-center flex items-center justify-center mx-auto w-full gap-4">
+				<div class="w-1/3">Elige fecha</div>
+				<div class="w-2/3">
+					<VueDatePicker 
+						v-model="date"
+						:format="format"
+						:enable-time-picker="false"
+						auto-apply
+					/>
+				</div>
 			</div>
-			<VueDatePicker 
-				v-model="date"
-				:format="format"
-				:enable-time-picker="false"
-				auto-apply
-			/>
 
-			<VueDatePicker 
-				v-model="time" 
-				time-picker 
-				minutes-increment="30"
-				auto-apply
-			/>
+			<div class="py-4 text-center ">
+				<div class="mb-2">Elige hora</div>
+				<div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+					<div 
+						v-for="(h, i) in hours" 
+						:key="i" 
+						class="border-2 border-sky-700 p-2 cursor-pointer  transition-colors duration-200" 
+						@click="selectHour(i)"
+						:class="[selectedHour === i ? 'bg-sky-700 text-white' : 'hover:text-white hover:bg-sky-600']"
+
+					>
+							{{ h.hour }}
+					</div>
+				</div>
+			</div>
+
+			<div v-if="selectedHour !== -1" class="text-center py-6 space-y-4">
+				<div>
+					<div class="font-condensed font-bold uppercase text-2xl">
+						Estos son los datos de tu reserva:
+					</div>
+
+					<div class="">
+						<span class="font-bold">Restaurante: </span>
+						{{ restaurants[selectedRestaurant].name }}
+					</div>
+
+					<div class="">
+						<span class="font-bold">Fecha:</span> 
+						{{  date.toLocaleDateString() }}
+					</div>
+
+					<div class="">
+						<span class="font-bold">Hora:</span>
+						{{ hours[selectedHour].hour }}
+					</div>
+				</div>
+				<div>
+					Para terminar, pulsa el botón de debajo para confirmar tu reserva
+				</div>
+				<button 
+					class="border-4 border-yellow-700 text-yellow-700 font-condensed text-2xl uppercase py-2 px-4 font-bold hover:bg-yellow-700 hover:text-white transition-colors duration-200"
+				>
+					Confirmar
+				</button>
+			</div>
 
 
 		</div>
@@ -59,22 +101,35 @@
 import TitleComp from "../components/TitleComp.vue";
 import RestaurantSelectComp from "../components/RestaurantSelectComp.vue";
 import VueDatePicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css'
+import '@vuepic/vue-datepicker/dist/main.css';
 
 export default {
 	name: "ReservaCompView",
 	components: { 
 		TitleComp,
 		RestaurantSelectComp,
-		VueDatePicker
+		VueDatePicker,
 	},
 	data() {
 		return {
-			time: {
-				hours: 13,
-				minutes: 30,
-			},
 			date: new Date(),
+			hours: [ 
+				{ id: 1, hour: "13:00"}, 
+				{ id: 2, hour: "13:30"}, 
+				{ id: 3, hour: "14:00"}, 
+				{ id: 4, hour: "14:30"}, 
+				{ id: 5, hour: "15:00"}, 
+				{ id: 6, hour: "15:30"}, 
+				{ id: 7, hour: "16:00"}, 
+				{ id: 8, hour: "16:30"}, 
+				{ id: 9, hour: "20:00"}, 
+				{ id: 10, hour: "20:30"}, 
+				{ id: 11, hour: "21:00"}, 
+				{ id: 12, hour: "21:30"}, 
+				{ id: 13, hour: "22:00"}, 
+				{ id: 14, hour: "22:30"}, 
+				{ id: 15, hour: "23:00"},
+			],
 			restaurants: [
 				{ 
 					id: 0,
@@ -92,6 +147,7 @@ export default {
 				},
 			],
 			selectedRestaurant: -1,
+			selectedHour: -1,
 		};
 	},
 	methods: {
@@ -106,6 +162,10 @@ export default {
 
 			return `${day}/${month}/${year}`;
 		},
+		selectHour(id) {
+			this.selectedHour = id;
+			// console.log(this.hours[id].hour)
+		}
 		
 	}
 }
