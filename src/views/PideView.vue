@@ -18,7 +18,7 @@
 				</div>
 	
 				<div>
-					<a href="https://www.ubereats.com/es" target="_blank">
+					<a href="https://www.just-eat.es/" target="_blank">
 						<img 
 							src="/img/logos/justEat.jpg" 
 							alt="justEat"
@@ -27,7 +27,7 @@
 					</a>
 				</div>
 				<div>
-					<a href="https://www.just-eat.es/" target="_blank">
+					<a href="https://www.ubereats.com/es" target="_blank">
 						<img 
 							src="/img/logos/uberEats.jpg" 
 							alt="uberEats"

@@ -3,7 +3,7 @@
 		<div class="bottom-0 w-full">
 
 			<div class="flex justify-start text-left pt-6">
-				<div class="px-4 py-4 md:px-0 w-full space-y-4 md:flex md:justify-between md:items-center md:space-y-0 ">
+				<div class="px-4 py-4 md:px-0 w-full space-y-8 md:flex md:justify-between md:items-center md:space-y-0 ">
 					<!-- Logo and name -->
 					<div class="flex items-center gap-2">
 						<div class="font-condensed font-bold text-white text-3xl">
@@ -12,13 +12,13 @@
 					</div>
 
 					<!-- Menu -->
-					<div class=" md:flex md:flex-row md:items-center">
+					<div class=" md:flex md:flex-row md:items-center space-y-4">
 						<div 
 							class=""
 							v-for="(item, index) in navigationItems" 
 							:key="index" 
 						>
-							<router-link class="font-bold uppercase font-condensed text-lg md:px-4 md:py-2 text-white hover:opacity-80 md:hover:opacity-100 md:hover:bg-white md:hover:text-sky-700 transform duration-300" :to="item.link">{{ item.label }}</router-link>
+							<router-link class="font-bold uppercase font-condensed text-lg md:px-4 py-1 md:py-2 text-white hover:opacity-80 md:hover:opacity-100 md:hover:bg-white md:hover:text-sky-700 transform duration-300" :to="item.link">{{ item.label }}</router-link>
 						</div>
 					</div>
 

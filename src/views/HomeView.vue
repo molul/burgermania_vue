@@ -30,7 +30,7 @@
 			<Content2 
 				picture="/img/burgers/burger3.jpg" 
 				pictureAlt="burger3" 
-				text="Recoge tu pedido"
+				text="Burgermania en tu casa"
 				buttonText="Haz tu pedido"
 				buttonLink="/pide"
 			/>
