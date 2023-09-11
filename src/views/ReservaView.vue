@@ -132,7 +132,7 @@
 					Mientras tanto, ¿quieres ir echando un ojo a nuestra carta?
 				</div>
 
-				<div class="pt-2">
+				<div class="py-4">
 					<ButtonComp buttonText="Ver carta" buttonLink="/carta" />
 				</div>
 			</div>
@@ -229,6 +229,7 @@ export default {
 
 			setTimeout ( () => {
 				this.status = 'confirmed';
+				window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 			}, 2500)
 		}
 		
