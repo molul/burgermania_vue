@@ -1,6 +1,4 @@
 TO DO
-	Footer: desarrollado por
-
 	Reserva
 
 	Pedido a domicilio

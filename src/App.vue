@@ -11,6 +11,7 @@
 					break-words
 					mt-16
 					md:mt-20
+					pt-2
 			">
 				<router-view/>
 			</div>

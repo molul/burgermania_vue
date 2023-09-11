@@ -68,7 +68,7 @@
 import TitleComp from "../components/TitleComp.vue";
 
 export default {
-	name: "AppComponent",
+	name: "ContactoCompView",
 	components: { 
 		TitleComp,
 	},
