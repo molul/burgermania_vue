@@ -1,11 +1,7 @@
 TO DO
 	Reserva
-		Queda la función de confirmar
-			Ocultar todo y mostrar mensaje
-				Hacer con una transición que parezca que ha cargado algo
-
-	Pedido a domicilio
-		Añadir a NavBar y Footer
+		Poner algunas opciones de hora como no disponibles
+			Grises y que no permitan clicar
 
 	Carta:
 		ZOOM al poner cursor encima de la imagen
