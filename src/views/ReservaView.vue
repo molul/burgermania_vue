@@ -23,13 +23,21 @@
 			</div>
 		</div>
 
-		<div v-if="selectedRestaurant !== -1" class="text-center bg-sky-700 text-white py-2">
-			<div>
-				De acuerdo, vamos a reservar mesa en:
+		<div v-if="selectedRestaurant !== -1">
+			<div class="text-center bg-sky-700 text-white py-2">
+				<div>
+					De acuerdo, vamos a reservar mesa en:
+				</div>
+				<div class="font-condensed font-bold text-lg uppercase">
+					{{ restaurants[selectedRestaurant].name }}
+				</div>
 			</div>
-			<div class="font-condensed font-bold text-lg uppercase">
-				{{ restaurants[selectedRestaurant].name }}
+
+			<div class="py-4">
+				<div>Elige fecha</div>
+
 			</div>
+
 		</div>
 	</div>
 </template>
@@ -37,6 +45,7 @@
 <script>
 import TitleComp from "../components/TitleComp.vue";
 import RestaurantSelectComp from "../components/RestaurantSelectComp.vue";
+
 
 export default {
 	name: "ReservaCompView",
@@ -46,6 +55,12 @@ export default {
 	},
 	data() {
 		return {
+			time0: null,
+			time1: null,
+			time2: null,
+			time3: null,
+			//picked: new Date(),
+			//date: null,
 			restaurants: [
 			{ 
 					id: 0,
@@ -70,6 +85,7 @@ export default {
 			this.restaurants.forEach ( (r) => r.id === id ? r.selected = true : r.selected = false);
 			this.selectedRestaurant = id;
 		},
+		
 	}
 }
 </script>
