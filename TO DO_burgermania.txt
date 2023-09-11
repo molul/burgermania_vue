@@ -1,8 +1,6 @@
 TO DO
 	Footer: desarrollado por
 
-	Contacto
-
 	Reserva
 
 	Pedido a domicilio
@@ -14,3 +12,6 @@ TO DO
 		entrantes
 		postres
 
+
+
+			
