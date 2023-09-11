@@ -12,7 +12,7 @@
 		<!-- 3 divs -->
 		<div class="md:grid md:grid-cols-3 md:gap-4 space-y-4 px-4 md:space-y-0 md:px-0 w-full text-white text-center align-top font-condensed text-4xl uppercase font-bold">
 			<Content2 
-				picture="/img/restaurant/restaurantInterior.jpg" 
+				picture="/img/restaurant/restaurant1Interior.jpg" 
 				pictureAlt="restaurantInterior" 
 				text="Reserva tu mesa"
 				buttonText="Haz tu reserva"
