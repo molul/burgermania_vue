@@ -1,9 +1,9 @@
 <template>
 	<div class="bg-white text-sky-700 p-4 h-full">
-		<TitleComp title="Reserva" />
 
 		<!-- Reservation steps -->
 		<div v-show="status !== 'confirmed'">
+			<TitleComp title="Reserva" />
 			<!-- Select restaurant -->
 			<div>
 				<div class="text-center ">
@@ -100,7 +100,7 @@
 						Para terminar, pulsa el botón de debajo para confirmar tu reserva
 					</div>
 					<button 
-						class="border-4 font-condensed text-2xl uppercase py-2 px-4 font-bold transition-colors duration-200 "
+						class="text-lg md:text-lg border-4 font-condensed text-2xl uppercase py-2 px-4 font-bold transition-colors duration-200 "
 						:class="status === 'confirming' ? 'border-gray-500 bg-gray-500 text-gray-300' : 'border-yellow-700 text-yellow-700 hover:bg-yellow-700 hover:text-white '"
 						@click="confirmReservation"
 					>
@@ -120,9 +120,24 @@
 			</div>
 		</div>
 
-		<div v-show="status === 'confirmed'">
-			¡Reserva confirmada! 
-			Nos vemos en el restaurante {{ selectedRestaurant !== -1 && restaurants[selectedRestaurant].name }}, el {{  date.toLocaleDateString() }} a las {{ selectedHour !== -1 && hours[selectedHour].hour }}
+		<div v-show="status === 'confirmed'" class="text-center">
+			<TitleComp title="¡Reserva confirmada!" />
+			
+			<div class="space-y-4">
+				<div>
+					Nos vemos en el restaurante {{ selectedRestaurant !== -1 && restaurants[selectedRestaurant].name }}, el {{  date.toLocaleDateString() }} a las {{ selectedHour !== -1 && hours[selectedHour].hour }}.
+				</div>
+
+				<div>
+					Mientras tanto, ¿quieres ir echando un ojo a nuestra carta?
+				</div>
+
+				<div class="pt-2">
+					<ButtonComp buttonText="Ver carta" buttonLink="/carta" />
+				</div>
+			</div>
+				
+				
 
 		</div>
 
@@ -134,6 +149,7 @@ import TitleComp from "../components/TitleComp.vue";
 import RestaurantSelectComp from "../components/RestaurantSelectComp.vue";
 import VueDatePicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
+import ButtonComp from "../components/ButtonComp.vue";
 
 export default {
 	name: "ReservaCompView",
@@ -141,6 +157,7 @@ export default {
 		TitleComp,
 		RestaurantSelectComp,
 		VueDatePicker,
+		ButtonComp
 	},
 	data() {
 		return {
@@ -206,15 +223,12 @@ export default {
 			setTimeout ( () => {
 				this.$refs.confirmReservation.scrollIntoView({ behavior: 'smooth' });
 			}, 200)
-
-			// console.log(this.hours[id].hour)
 		},
 		confirmReservation () {
 			this.status = 'confirming';
-			console.log(this.status);
+
 			setTimeout ( () => {
 				this.status = 'confirmed';
-				console.log(this.status);
 			}, 2500)
 		}
 		
