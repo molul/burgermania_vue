@@ -42,6 +42,7 @@ export default {
 			navigationItems: [
 				{ label: 'Carta', link: '/carta' },
 				{ label: 'Reserva', link: '/reserva' },
+				{ label: 'Pide', link: '/pide' },
 				{ label: 'Nosotros', link: '/nosotros' },
 				{ label: 'Contacto', link: '/contacto' },
 			]
