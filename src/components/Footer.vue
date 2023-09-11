@@ -2,7 +2,7 @@
 	<footer>
 		<div class="bottom-0 w-full">
 
-			<div class="flex justify-start text-left pt-6">
+			<div class="flex justify-start text-left pt-4 md:pt-2">
 				<div class="px-4 py-4 md:px-0 w-full space-y-8 md:flex md:justify-between md:items-center md:space-y-0 ">
 					<!-- Logo and name -->
 					<div class="flex items-center gap-2">
@@ -27,7 +27,7 @@
 
 			</div>
 
-			<div class="w-full px-4 py-4 text-left md:text-center md:px-0 w-full text-white">
+			<div class="w-full px-4 py-4 text-left md:text-center md:px-0 w-full text-white text-sm sm:text-base">
 				Desarrollado por <a href="https://www.luismorcilloluque.com/es" target="_blank" class="font-bold">Luis Morcillo</a> con Vue &copy; 2023
 			</div>
 		</div>

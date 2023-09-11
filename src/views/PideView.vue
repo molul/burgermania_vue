@@ -6,7 +6,7 @@
 
 			<div class="text-center">Tenemos nuestra carta disponible para pedir a domicilio en los principales servicios de delivery:</div>
 
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+			<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
 				<div>
 					<a href="https://glovoapp.com/es/es/" target="_blank">
 						<img 

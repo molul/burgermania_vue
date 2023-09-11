@@ -12,7 +12,7 @@
 					items-center
 					break-words
 					mt-16
-					md:mt-24
+					md:mt-20
 					
 					flex
 					flex-grow
