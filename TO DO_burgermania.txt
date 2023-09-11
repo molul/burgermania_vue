@@ -9,6 +9,7 @@ TO DO
 		Añadir a NavBar y Footer
 
 	Carta:
+		ZOOM al poner cursor encima de la imagen
 		bebidas
 		entrantes
 		postres
