@@ -29,7 +29,7 @@
 			</div>
 
 			<!-- Select date and time -->
-			<div ref="selectDataTime">
+			<div ref="selectDataTime" class="scroll-mt-20">
 				<div v-show="selectedRestaurant !== -1">
 					<div class="text-center bg-sky-700 text-white py-2">
 						<div>
@@ -74,7 +74,7 @@
 			</div>
 
 			<!-- Confirm reservation -->
-			<div ref="confirmReservation">
+			<div ref="confirmReservation" class="scroll-mt-20">
 				<div v-show="selectedHour !== -1" class="text-center py-6 space-y-4">
 					<div>
 						<div class="font-condensed font-bold uppercase text-2xl">
