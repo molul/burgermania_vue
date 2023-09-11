@@ -41,7 +41,7 @@
 		<div class="">
 			<div class="border-4 border-white bg-white text-sky-700 p-4  text-left flex items-center">
 				<div>
-					Gracias por visitarnos en <span class="font-bold">BurgerMania</span>. Estamos emocionados de compartir nuestras hamburguesas excepcionales contigo y esperamos que disfrutes de tu experiencia en nuestro restaurante tanto como nosotros disfrutamos servirte. ¡Bienvenido a la familia <span class="font-bold">BurgerMania</span>!
+					Estamos emocionados de compartir nuestras excepcionales hamburguesas contigo y esperamos que disfrutes de tu experiencia en nuestro restaurante tanto como nosotros disfrutamos servirte. ¡Bienvenido a la familia <span class="font-bold">BurgerMania</span>!
 				</div>
 			</div>
 		</div>

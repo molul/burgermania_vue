@@ -207,7 +207,7 @@ export default {
 
 			setTimeout ( () => {
 				this.$refs.selectDataTime.scrollIntoView({ behavior: 'smooth' });
-			}, 200)
+			}, 250)
 
 		},
 		format (date) {
@@ -222,7 +222,7 @@ export default {
 			
 			setTimeout ( () => {
 				this.$refs.confirmReservation.scrollIntoView({ behavior: 'smooth' });
-			}, 200)
+			}, 250)
 		},
 		confirmReservation () {
 			this.status = 'confirming';
