@@ -20,7 +20,13 @@
 				<!-- Logo and name -->
 				<div class=" flex w-full items-center gap-2">
 					<div class="font-condensed font-bold text-white hover:opacity-80 transition-opacity  duration-200 text-4xl md:text-3xl lg:text-5xl">
-						<router-link class="block font-bold uppercase" to="/">Burgerman<span class="bg-white text-sky-700">ia</span></router-link>
+						<router-link 
+							class="block font-bold uppercase" 
+							to="/"
+							@click="MenuClose()"
+						>
+							Burgerman<span class="bg-white text-sky-700">ia</span>
+						</router-link>
 					</div>
 				</div>
 
