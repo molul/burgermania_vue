@@ -12,7 +12,7 @@
 			/>
 		</div>
 		<div 
-			class="p-4 font-condensed text-xl text-white bg-sky-700 uppercase font-bold text-center"
+			class="p-4 font-condensed text-2xl md:text-3xl text-white bg-sky-700 uppercase font-bold text-center"
 			:class="[restSelected ? 'bg-yellow-700' : 'bg-sky-700']"
 		>
 			{{ name }}

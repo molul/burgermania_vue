@@ -5,11 +5,13 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+		},
 		fontFamily: {
 			'condensed': ['Barlow Semi Condensed', 'Sans-serif'],
 			'mainText': ['Raleway', 'Sans-serif']
 		}
   },
-  plugins: [],
+  plugins: [
+	],
 }

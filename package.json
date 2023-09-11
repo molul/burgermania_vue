@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vuepic/vue-datepicker": "^6.1.0",
     "dotenv": "^16.3.1",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
+    "vue-flatpickr-component": "^11.0.3",
+    "vue-router": "^4.2.4",
+    "vuejs3-datepicker": "^1.0.19"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
