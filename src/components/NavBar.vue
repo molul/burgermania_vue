@@ -8,7 +8,7 @@
 			fixed
 			w-full
 			md:w-4/5
-			fixed
+			md:max-w-5xl 
 			top-0 
 			font-navmenu 
 			z-50
@@ -16,7 +16,7 @@
 			md:h-20
 			text-white"
 		>
-			<div class="flex px-4 md:px-0 justify-between flex-row  w-full items-center ">
+			<div class="flex px-4 md:px-0 justify-between items-center w-full">
 				<!-- Logo and name -->
 				<div class=" flex w-full items-center gap-2">
 					<div class="font-condensed font-bold text-white hover:opacity-80 transition-opacity  duration-300 text-4xl md:text-3xl lg:text-5xl">
