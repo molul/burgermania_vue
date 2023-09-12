@@ -1,7 +1,7 @@
 <template>
 	<div class=" space-y-4 h-full text-sky-800 px-4 md:px-0 bg-sky-700">
-		<div class="mx-auto md:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col md:flex-row w-full items-center justify-center ">
-			<div class="w-full md:w-2/3 ">
+		<div class="mx-auto sm:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col sm:flex-row w-full items-center justify-center ">
+			<div class="w-full sm:w-2/3 ">
 				<img 
 					src="/img/burgers/burgerDelMes.jpg" 
 					alt="burgerDelMes"
@@ -9,7 +9,7 @@
 				>
 			</div>
 			
-			<div class="w-full md:w-1/3 text-center space-y-8 flex flex-col py-8 px-8">
+			<div class="w-full sm:w-1/3 text-center space-y-8 flex flex-col py-8 px-8">
 				<div class="text-sky-700 font-condensed uppercase text-5xl font-bold">
 					Burger del mes
 				</div>

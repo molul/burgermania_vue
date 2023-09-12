@@ -2,8 +2,8 @@
 	<div class="bg-sky-700 space-y-4 ">
 		<div class="px-4 md:px-0">
 
-			<div class="mx-auto md:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col md:flex-row w-full items-center justify-center  md:h-[350px] overflow-hidden">
-				<div class="w-full md:w-1/2 h-full overflow-hidden">
+			<div class="mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col lg:flex-row w-full items-center justify-center  lg:h-[400px] overflow-hidden">
+				<div class="w-full xl:w-1/2 h-full overflow-hidden">
 					<img 
 						src="/img/burgers/burgerDelMes.jpg" 
 						alt="burgerDelMes"
@@ -11,16 +11,16 @@
 					>
 				</div>
 				
-				<div class="md:w-1/2 text-center flex flex-col justify-between h-full space-y-0 pt-4">
-					<div class="text-sky-700 font-condensed uppercase text-3xl md:text-5xl font-bold">
+				<div class="lg:w-1/2 text-center flex flex-col justify-between h-full space-y-0 pt-4">
+					<div class="text-sky-700 font-condensed uppercase text-3xl xl:text-5xl font-bold">
 						Burger del mes
 					</div>
 		
-					<div class="py-4 md:py-6 px-4 flex items-center justify-center text-sm md:text-base">
+					<div class="py-4 md:py-6 px-4 flex items-center justify-center text-xs md:text-sm">
 						Hamburguesa de Pollo con Salsa de Mango y Aguacate
 					</div>
 
-					<div class="md:flex-1 flex flex-col  h-full mx-auto md:max-w-5xl max-w-full bg-white bg-opacity-90 w-full justify-center space-y-4 text-sm md:text-base p-4 text-left">
+					<div class="md:flex-1 flex flex-col  h-full mx-auto md:max-w-5xl max-w-full bg-white bg-opacity-90 w-full justify-center space-y-4 text-xs md:text-sm p-4 text-left">
 						<div>
 							Disfruta de una jugosa hamburguesa de pollo o nuestra opción vegetariana, sazonada con comino y pimentón, servidas en un pan integral, con nuestra deliciosa salsa de mango y aguacate. Una experiencia tropical en cada bocado.
 						</div>

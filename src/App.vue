@@ -1,6 +1,6 @@
 <template>
-	<div class="bg-sky-700 min-h-screen flex flex-col font-mainText ">
-		<div class="flex-1 h-full mx-auto flex flex-col w-full md:w-4/5 md:max-w-5xl ">
+	<div class="bg-sky-700 flex flex-col font-mainText min-h-screen">
+		<div class="mx-auto flex flex-col w-full md:w-4/5 md:max-w-5xl h-full">
 			<div>
 				<NavBar />
 			</div>
@@ -13,10 +13,8 @@
 					break-words
 					mt-16
 					md:mt-20
-					
 					flex
 					flex-grow
-					bg-white
 			">
 				<router-view/>
 			</div>
