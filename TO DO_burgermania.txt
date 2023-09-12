@@ -1,7 +1,5 @@
 TO DO
 	Carta:
-		Quitar una burger y poner la burger del mes la primera de todas
-		ZOOM al poner cursor encima de la imagen
 		bebidas
 		entrantes
 		postres

@@ -1,11 +1,49 @@
 <template>
-	<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4 md:px-0 bg-sky-700">
-		<div 
-			class="flex flex-col border-4 border-white text-white  "
-			v-for="(burger, index) in burgers" 
-			:key="index" 
-		>
-			<MenuBurgerComp :burger="burger" />
+	<div class="bg-sky-700 space-y-4 ">
+		<div class="px-4 md:px-0">
+
+			<div class="mx-auto md:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col md:flex-row w-full items-center justify-center  md:h-[350px] overflow-hidden">
+				<div class="w-full md:w-1/2 h-full overflow-hidden">
+					<img 
+						src="/img/burgers/burgerDelMes.jpg" 
+						alt="burgerDelMes"
+						class="object-contain w-full"
+					>
+				</div>
+				
+				<div class="md:w-1/2 text-center flex flex-col justify-between h-full space-y-0 pt-4">
+					<div class="text-sky-700 font-condensed uppercase text-3xl md:text-5xl font-bold">
+						Burger del mes
+					</div>
+		
+					<div class="py-4 md:py-6 px-4 flex items-center justify-center text-sm md:text-base">
+						Hamburguesa de Pollo con Salsa de Mango y Aguacate
+					</div>
+
+					<div class="md:flex-1 flex flex-col  h-full mx-auto md:max-w-5xl max-w-full bg-white bg-opacity-90 w-full justify-center space-y-4 text-sm md:text-base p-4 text-left">
+						<div>
+							Disfruta de una jugosa hamburguesa de pollo o nuestra opción vegetariana, sazonada con comino y pimentón, servidas en un pan integral, con nuestra deliciosa salsa de mango y aguacate. Una experiencia tropical en cada bocado.
+						</div>
+						<div>
+							<span class="font-bold">Precio: </span>12.95€
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+		<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4 md:px-0 ">
+			<div 
+				class="flex flex-col border-4 border-white text-white  "
+				v-for="(burger, index) in burgers" 
+				:key="index" 
+			>
+				<MenuBurgerComp :burger="burger" />
+			</div>
 		</div>
 	</div>
 </template>
