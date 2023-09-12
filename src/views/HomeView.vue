@@ -1,5 +1,5 @@
 <template>
-	<div class="space-y-6 bg-sky-700">
+	<div class="space-y-6 h-full flex-1">
 		<!-- Pedido a domicilio -->
 		<Content1 
 			picture="/img/burgers/burgerMain2.jpg" 

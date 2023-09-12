@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white text-sky-700 p-4">
+	<div class="bg-white text-sky-700 h-full flex-1">
 		<div class="md:w-3/5 mx-auto">
 
 			<TitleComp title="Contacto" />

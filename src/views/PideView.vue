@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white text-sky-700 p-4 h-full">
+	<div class="bg-white text-sky-700 p-4 h-full flex-1">
 		<TitleComp title="PEDIDO A DOMICILIO" />
 		
 		<div class="space-y-4">
