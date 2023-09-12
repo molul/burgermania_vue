@@ -1,8 +1,4 @@
 TO DO
-	Reserva
-		Poner algunas opciones de hora como no disponibles
-			Grises y que no permitan clicar
-
 	Carta:
 		Quitar una burger y poner la burger del mes la primera de todas
 		ZOOM al poner cursor encima de la imagen

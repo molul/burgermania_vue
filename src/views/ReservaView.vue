@@ -40,6 +40,7 @@
 						</div>
 					</div>
 
+					<!-- Select date -->
 					<div class="py-4 text-center flex items-center justify-center mx-auto w-full gap-4">
 						<div class="w-1/3">Elige fecha</div>
 						<div class="w-2/3">
@@ -52,16 +53,20 @@
 						</div>
 					</div>
 
+					<!-- Select hour -->
 					<div class="py-4 text-center ">
 						<div class="mb-2">Elige hora</div>
 						<div class="grid grid-cols-2 gap-4 md:grid-cols-4">
 							<div 
 								v-for="(h, i) in hours" 
 								:key="i" 
-								class="border-2 border-sky-700 p-2 cursor-pointer  transition-colors duration-200" 
+								class="border-4 p-2 transition-colors duration-200" 
 								@click="selectHour(i)"
-								:class="[selectedHour === i ? 'bg-sky-700 text-white' : 'hover:text-white hover:bg-sky-600']"
-
+								:class="[
+									h.available && selectedHour === i && 'bg-sky-700 text-white',
+									h.available && selectedHour !== i && 'hover:text-white hover:bg-sky-600',
+									h.available ? 'cursor-pointer border-sky-700 ' : 'cursor-not-allowed text-gray-400 border-gray-400 '
+								]"
 							>
 									{{ h.hour }}
 							</div>
@@ -164,21 +169,21 @@ export default {
 			status: 'started',
 			date: new Date(),
 			hours: [ 
-				{ id: 1, hour: "13:00"}, 
-				{ id: 2, hour: "13:30"}, 
-				{ id: 3, hour: "14:00"}, 
-				{ id: 4, hour: "14:30"}, 
-				{ id: 5, hour: "15:00"}, 
-				{ id: 6, hour: "15:30"}, 
-				{ id: 7, hour: "16:00"}, 
-				{ id: 8, hour: "16:30"}, 
-				{ id: 9, hour: "20:00"}, 
-				{ id: 10, hour: "20:30"}, 
-				{ id: 11, hour: "21:00"}, 
-				{ id: 12, hour: "21:30"}, 
-				{ id: 13, hour: "22:00"}, 
-				{ id: 14, hour: "22:30"}, 
-				{ id: 15, hour: "23:00"},
+				{ id: 1, hour: "13:00", available: true}, 
+				{ id: 2, hour: "13:30", available: false}, 
+				{ id: 3, hour: "14:00", available: true}, 
+				{ id: 4, hour: "14:30", available: false}, 
+				{ id: 5, hour: "15:00", available: false}, 
+				{ id: 6, hour: "15:30", available: true}, 
+				{ id: 7, hour: "16:00", available: true}, 
+				{ id: 8, hour: "16:30", available: false}, 
+				{ id: 9, hour: "20:00", available: true}, 
+				{ id: 10, hour: "20:30", available: true}, 
+				{ id: 11, hour: "21:00", available: false}, 
+				{ id: 12, hour: "21:30", available: true}, 
+				{ id: 13, hour: "22:00", available: false}, 
+				{ id: 14, hour: "22:30", available: false}, 
+				{ id: 15, hour: "23:00", available: true},
 			],
 			restaurants: [
 				{ 
@@ -218,11 +223,13 @@ export default {
 			return `${day}/${month}/${year}`;
 		},
 		selectHour(id) {
-			this.selectedHour = id;
-			
-			setTimeout ( () => {
-				this.$refs.confirmReservation.scrollIntoView({ behavior: 'smooth' });
-			}, 150)
+			if (this.hours[id].available) {
+				this.selectedHour = id;
+				
+				setTimeout ( () => {
+					this.$refs.confirmReservation.scrollIntoView({ behavior: 'smooth' });
+				}, 150)
+			}
 		},
 		confirmReservation () {
 			this.status = 'confirming';
