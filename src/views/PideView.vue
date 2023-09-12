@@ -4,7 +4,7 @@
 		
 		<div class="space-y-4">
 
-			<div class="text-center">Tenemos nuestra carta disponible para pedir a domicilio en los principales servicios de delivery:</div>
+			<div class="text-center">¿No tienes ganas de salir de casa pero sí de BurgerMania? ¡Estupendo! Puedes pedir nuestras deliciosas hamburgesas desde los principales servicios de delivery:</div>
 
 			<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
 				<div>

@@ -130,7 +130,7 @@
 			
 			<div class="space-y-4">
 				<div>
-					Nos vemos en el restaurante {{ selectedRestaurant !== -1 && restaurants[selectedRestaurant].name }}, el {{  date.toLocaleDateString() }} a las {{ selectedHour !== -1 && hours[selectedHour].hour }}.
+					Nos vemos en el restaurante <span class="font-bold">{{ selectedRestaurant !== -1 && restaurants[selectedRestaurant].name }}</span>, el <span class="font-bold">{{  date.toLocaleDateString() }}</span> a las <span class="font-bold">{{ selectedHour !== -1 && hours[selectedHour].hour }}</span>.
 				</div>
 
 				<div>
