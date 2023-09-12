@@ -1,6 +1,6 @@
 <template>
 	<router-link 
-		class="text-yellow-700 border-4 border-yellow-700  hover:bg-yellow-700 hover:text-white transition-colors font-bold uppercase font-condensed text-lg md:text-lg px-4 py-2" 
+		class="bg-white text-yellow-700 border-4 border-yellow-700  hover:bg-yellow-700 hover:text-white transition-colors font-bold uppercase font-condensed text-lg md:text-lg px-4 py-2" 
 		:to="buttonLink"
 	>
 		{{ buttonText }}

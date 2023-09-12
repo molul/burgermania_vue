@@ -28,12 +28,21 @@
 				<span class="font-bold">Precio: </span>12.95€
 			</div>
 		</div>
+
+		<div class="py-4 border-4 border-white bg-white bg-opacity-80 flex items-center justify-center">
+			<ButtonComp buttonText="Ver carta completa" buttonLink="/carta" />
+		</div>
 	</div>
 </template>
 
 <script>
+import ButtonComp from "../components/ButtonComp.vue";
+
 export default {
 	name: 'BurgerDelMesView',
 	title: 'BurgerDelMes',
+	components: { 
+		ButtonComp,
+	},
 }
 </script>
