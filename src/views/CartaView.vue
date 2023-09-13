@@ -2,7 +2,7 @@
 	<div class="bg-sky-700 space-y-4 ">
 		<div class="px-4 md:px-0">
 
-			<div class="mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col lg:flex-row w-full items-center justify-center  lg:h-[400px] overflow-hidden">
+			<div class="mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col lg:flex-row w-full items-center justify-center  lg:h-[380px] overflow-hidden">
 				<div class="w-full xl:w-1/2 h-full overflow-hidden">
 					<img 
 						src="/img/burgers/burgerDelMes.jpg" 

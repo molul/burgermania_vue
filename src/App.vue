@@ -23,7 +23,10 @@
 			<div>
 				<Footer />
 			</div>
-			<ScrollToTopButton />
+
+			<div class="">
+				<ScrollToTopButton />
+			</div>
 		</div>
 	</div>
 </template>
