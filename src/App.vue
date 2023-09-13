@@ -23,6 +23,7 @@
 			<div>
 				<Footer />
 			</div>
+			<ScrollToTopButton />
 		</div>
 	</div>
 </template>
@@ -30,12 +31,14 @@
 <script>
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
+import ScrollToTopButton from './components/ScrollToTopButton.vue';
 
 export default {
 	name: "AppComponent",
-	components: { 
-		NavBar,
-		Footer,
-	},
+	components: {
+    NavBar,
+    Footer,
+    ScrollToTopButton
+},
 }
 </script>
