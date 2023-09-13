@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white text-sky-700 p-8 h-full flex-1">
+	<div class="bg-white text-sky-700 p-8 h-full flex-1 w-full">
 
 		<!-- Reservation steps -->
 		<div v-show="status !== 'confirmed'">
