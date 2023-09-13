@@ -1,12 +1,12 @@
 <template>
-	<div class="bg-white text-sky-700 p-4 h-full flex-1">
+	<div class="bg-white text-sky-700 p-8 h-full flex-1">
 		<TitleComp title="PEDIDO A DOMICILIO" />
 		
 		<div class="space-y-4">
 
 			<div class="text-center">¿No tienes ganas de salir de casa pero sí de BurgerMania? ¡Estupendo! Puedes pedir nuestras deliciosas hamburgesas desde los principales servicios de delivery:</div>
 
-			<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
 				<div>
 					<a href="https://glovoapp.com/es/es/" target="_blank">
 						<img 

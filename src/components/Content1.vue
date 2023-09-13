@@ -1,6 +1,6 @@
 <template>
-	<div class="mx-auto md:max-w-5xl max-w-full  border-0 md:border-4 border-white bg-white bg-opacity-90 flex flex-col md:flex-row w-full items-center justify-center ">
-		<div class="w-full md:w-2/3 ">
+	<div class="mx-auto lg:max-w-5xl max-w-full  border-0 md:border-4 border-white bg-white bg-opacity-90 flex flex-col lg:flex-row w-full items-center justify-center ">
+		<div class="w-full lg:w-2/3 ">
 			<img 
 				:src="picture" 
 				:alt="pictureAlt"
@@ -8,7 +8,7 @@
 			>
 		</div>
 		
-		<div class="px-4 w-full md:w-1/3 text-center space-y-8 flex flex-col py-8">
+		<div class="px-4 w-full lg:w-1/3 text-center space-y-8 flex flex-col py-8">
 			<div class="text-sky-700 font-condensed uppercase text-5xl font-bold">
 				{{ text }}
 			</div>
