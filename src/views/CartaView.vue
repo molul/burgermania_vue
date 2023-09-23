@@ -36,7 +36,7 @@
 
 
 		</div>
-		<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4 md:px-0 ">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-0 ">
 			<div 
 				class="flex flex-col border-4 border-white text-white  "
 				v-for="(burger, index) in burgers" 
