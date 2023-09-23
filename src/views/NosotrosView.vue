@@ -31,15 +31,6 @@
 
 			<div class="border-4 border-white bg-white text-sky-700 p-4  text-left  flex items-center">
 				<div> 
-					Valoramos el feedback de nuestros clientes y siempre estamos buscando formas de mejorar. Tu satisfacción es nuestra máxima prioridad, y trabajamos arduamente todos los días para superar tus expectativas.
-				</div>
-			</div>
-		</div>
-
-
-		<div class="">
-			<div class="border-4 border-white bg-white text-sky-700 p-4  text-left flex items-center">
-				<div>
 					Estamos emocionados de compartir nuestras excepcionales hamburguesas contigo y esperamos que disfrutes de tu experiencia en nuestro restaurante tanto como nosotros disfrutamos servirte. ¡Bienvenido a la familia <span class="font-bold">BurgerMania</span>!
 				</div>
 			</div>
