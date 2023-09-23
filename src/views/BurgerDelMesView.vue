@@ -3,7 +3,7 @@
 		<div class="mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col lg:flex-row w-full items-center justify-center ">
 			<div class="w-full lg:w-2/3 ">
 				<img 
-					src="/img/burgers/burgerDelMes.jpg" 
+					src="/img/burgers/burgerDelMes.webp" 
 					alt="burgerDelMes"
 					class="object-cover w-full"
 				>
