@@ -1,12 +1,8 @@
 TO DO
+	
 	Carta:
 		bebidas
 		entrantes
 		postres
 
-
-	Subir a portfolio
-
-	Publicar en LinkedIn
-
-			
+		
