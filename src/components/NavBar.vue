@@ -5,7 +5,7 @@
     >
       <div class="flex px-4 md:px-0 justify-between items-center w-full">
         <!-- Logo and name -->
-        <div class="flex w-full items-center gap-2">
+        <div class="z-50 flex w-full items-center gap-2">
           <div
             class="font-condensed font-bold text-white hover:opacity-80 transition-opacity duration-200 text-4xl md:text-3xl lg:text-5xl"
           >
@@ -20,7 +20,7 @@
         </div>
 
         <!-- Menu -->
-        <div class="">
+        <div class="z-50">
           <div class="space-x-4 hidden md:flex">
             <div
               class="flex border-4 border-white text-white hover:bg-white hover:text-sky-700 transition duration-200"
@@ -36,7 +36,10 @@
           </div>
 
           <!-- Mobile menu button -->
-          <div class="block md:hidden cursor-pointer" @click="MenuToggle()">
+          <div
+            class="z-50 block md:hidden cursor-pointer"
+            @click="MenuToggle()"
+          >
             <div
               className="mx-auto z-50 flex w-10 h-10 flex-col justify-between items-center md:hidden py-1 "
             >
@@ -59,7 +62,7 @@
 
       <!-- Mobile menu -->
       <div
-        class="md:hidden absolute top-16 w-full h-screen left-0 transform transition-transform duration-200 ease-in-out bg-sky-800 bg-opacity-95 py-2 text-base space-y-4 px-4 flex flex-col items-center justify-center pb-32"
+        class="md:hidden absolute top-0 w-full h-screen left-0 transform transition-transform duration-200 ease-in-out bg-sky-800 bg-opacity-95 py-2 text-base space-y-4 px-4 flex flex-col items-center justify-center pb-32"
         :class="[open ? '-transform-x-0' : 'translate-x-full']"
       >
         <div
