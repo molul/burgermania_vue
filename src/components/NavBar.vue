@@ -59,7 +59,7 @@
 
       <!-- Mobile menu -->
       <div
-        class="md:hidden absolute top-16 w-full h-screen left-0 transform transition-transform duration-200 ease-in-out bg-sky-800 py-2 text-base space-y-0 px-4"
+        class="md:hidden absolute top-16 w-full h-screen left-0 transform transition-transform duration-200 ease-in-out bg-sky-800 bg-opacity-95 py-2 text-base space-y-4 px-4 flex flex-col items-center justify-center pb-32"
         :class="[open ? '-transform-x-0' : 'translate-x-full']"
       >
         <div
@@ -68,7 +68,7 @@
           :key="index"
         >
           <router-link
-            class="text-white hover:bg-white hover:text-sky-700 transition duration-200 font-bold uppercase font-condensed text-xl md:text-2xl lg:text-2xl px-2 py-2 my-2"
+            class="text-white hover:bg-white hover:text-sky-700 transition duration-200 font-bold uppercase font-condensed text-3xl md:text-2xl lg:text-2xl px-2 py-2 my-2"
             :to="item.link"
             @click="MenuClose()"
           >
