@@ -22,13 +22,13 @@
           </div>
 
           <div
-            class="py-4 md:py-6 px-4 flex items-center justify-center text-xs md:text-sm"
+            class="py-4 md:py-6 px-4 flex items-center justify-center text-sm md:text-base font-semibold"
           >
             Hamburguesa de Pollo con Salsa de Mango y Aguacate
           </div>
 
           <div
-            class="md:flex-1 flex flex-col h-full mx-auto md:max-w-5xl max-w-full bg-white bg-opacity-90 w-full justify-center space-y-4 text-xs md:text-sm p-4 text-left"
+            class="md:flex-1 flex flex-col h-full mx-auto md:max-w-5xl max-w-full bg-white bg-opacity-90 w-full justify-center space-y-4 text-sm md:text-base p-4 text-left"
           >
             <div>
               Disfruta de una jugosa hamburguesa de pollo o nuestra opción

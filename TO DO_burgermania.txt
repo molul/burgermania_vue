@@ -1,5 +1,8 @@
 TO DO
 	
+	Ingredientes: poner un "+" que lo despliegue al tocarlo
+		Y que se encoja cuando toques fuera
+
 	Carta:
 		bebidas
 		entrantes
