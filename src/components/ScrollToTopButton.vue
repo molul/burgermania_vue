@@ -1,8 +1,8 @@
 <template>
   <div
-    class="fixed w-12 h-12 cursor-pointer bottom-4 right-4 transition-opacity duration-300"
+    class="fixed w-12 h-12 cursor-pointer bottom-4 right-4 transition duration-300"
     @click="scrollToTop()"
-    :class="[isTop ? 'visible' : 'hidden']"
+    :class="[isTop ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20']"
   >
     <div
       class="border-4 border-yellow-700 bg-white p-2 hover:bg-yellow-700 transition duration-200 fill-yellow-700 hover:fill-white transition duration-200"
