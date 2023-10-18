@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-4 h-full text-sky-800 px-4 md:px-0 bg-sky-700 flex-1">
+  <div class="space-y-4 h-full text-sky-800 px-4 md:px-0 bg-sky-700">
     <div
       class="mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col lg:flex-row w-full items-center justify-center"
     >
@@ -18,12 +18,12 @@
           Burger del mes
         </div>
 
-        <div class="">{{ burgerDelMes.name }}</div>
+        <div class="font-bold">{{ burgerDelMes.name }}</div>
       </div>
     </div>
 
     <div
-      class="p-4 mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 w-full items-center justify-center space-y-4 h-full"
+      class="p-4 mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white w-full items-center justify-center space-y-4 h-full"
     >
       <div>
         {{ burgerDelMes.description }}

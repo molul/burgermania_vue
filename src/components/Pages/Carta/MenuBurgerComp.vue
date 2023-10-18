@@ -9,17 +9,17 @@
     </div>
 
     <div
-      class="flex flex-row items-top justify-between bg-white gap-0 sm:gap-2 px-2 py-4"
+      class="flex flex-col items-top justify-between bg-white gap-0 sm:gap-2 px-2 py-4 space-y-2"
     >
       <div
-        class="md:h-16 lg:h-24 text-sky-700 font-bold text-left font-condensed text-2xl md:text-2xl uppercase break-words"
+        class="text-sky-700 font-bold text-left font-condensed text-2xl md:text-xl uppercase break-words"
       >
         {{ burger.name }}
       </div>
       <div class="text-base md:text-base">
-        <div class="font-semibold bg-sky-700 text-white px-2 py-1">
+        <span class="font-semibold bg-sky-700 text-white px-2 py-1">
           {{ burger.price }}€
-        </div>
+        </span>
       </div>
     </div>
 
