@@ -25,9 +25,9 @@
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue";
-import Footer from "./components/Footer.vue";
-import ScrollToTopButton from "./components/ScrollToTopButton.vue";
+import NavBar from "./components/Layout/NavBar.vue";
+import Footer from "./components/Layout/Footer.vue";
+import ScrollToTopButton from "./components/Common/ScrollToTopButton.vue";
 
 export default {
   name: "AppComponent",

@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import TitleComp from "../components/TitleComp.vue";
+import TitleComp from "../components/Common/TitleComp.vue";
 
 export default {
   name: "PideCompView",

@@ -34,7 +34,7 @@
       </div>
 
       <div
-        class="w-full px-4 py-4 text-left md:text-center md:px-0 w-full text-white text-sm sm:text-base"
+        class="w-full px-4 py-4 text-left md:text-center md:px-0 text-white text-sm sm:text-base"
       >
         Desarrollado por
         <a

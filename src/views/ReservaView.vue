@@ -111,7 +111,7 @@
             Para terminar, pulsa el botón de debajo para confirmar tu reserva
           </div>
           <button
-            class="text-lg md:text-lg border-4 font-condensed text-2xl uppercase py-2 px-4 font-bold transition-colors duration-200"
+            class="text-2xl md:text-lg border-4 font-condensed uppercase py-2 px-4 font-bold transition-colors duration-200"
             :class="
               status === 'confirming'
                 ? 'border-gray-500 bg-gray-500 text-gray-300'
@@ -180,11 +180,11 @@
 </template>
 
 <script>
-import TitleComp from "../components/TitleComp.vue";
-import RestaurantSelectComp from "../components/RestaurantSelectComp.vue";
+import TitleComp from "../components/Common/TitleComp.vue";
+import RestaurantSelectComp from "../components/Pages/Reserva/RestaurantSelectComp.vue";
 import VueDatePicker from "@vuepic/vue-datepicker";
 import "@vuepic/vue-datepicker/dist/main.css";
-import ButtonComp from "../components/ButtonComp.vue";
+import ButtonComp from "../components/Common/ButtonComp.vue";
 
 export default {
   name: "ReservaCompView",

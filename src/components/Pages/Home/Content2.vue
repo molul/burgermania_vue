@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import ButtonComp from "./ButtonComp.vue";
+import ButtonComp from "../../Common/ButtonComp.vue";
 
 export default {
   name: "Content2",

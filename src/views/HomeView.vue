@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import Content1 from "../components/Content1.vue";
-import Content2 from "../components/Content2.vue";
+import Content1 from "../components/Pages/Home/Content1.vue";
+import Content2 from "../components/Pages/Home/Content2.vue";
 
 export default {
   name: "HomeView",

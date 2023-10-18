@@ -1,46 +1,8 @@
 <template>
   <div class="bg-sky-700 space-y-4">
-    <div class="px-4 md:px-0">
-      <div
-        class="mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 flex flex-col lg:flex-row w-full items-center justify-center lg:h-[380px] overflow-hidden"
-      >
-        <div class="w-full xl:w-1/2 h-full overflow-hidden">
-          <img
-            src="/img/burgers/burgerDelMes.webp"
-            alt="burgerDelMes"
-            class="object-contain w-full"
-          />
-        </div>
-
-        <div
-          class="lg:w-1/2 text-center flex flex-col justify-between h-full space-y-0 pt-4"
-        >
-          <div
-            class="text-sky-700 font-condensed uppercase text-3xl xl:text-5xl font-bold"
-          >
-            Burger del mes
-          </div>
-
-          <div
-            class="py-4 md:py-6 px-4 flex items-center justify-center text-sm md:text-base font-semibold"
-          >
-            Hamburguesa de Pollo con Salsa de Mango y Aguacate
-          </div>
-
-          <div
-            class="md:flex-1 flex flex-col h-full mx-auto md:max-w-5xl max-w-full bg-white bg-opacity-90 w-full justify-center space-y-4 text-sm md:text-base p-4 text-left"
-          >
-            <div>
-              Disfruta de una jugosa hamburguesa de pollo o nuestra opción
-              vegetariana, sazonada con comino y pimentón, servidas en un pan
-              integral, con nuestra deliciosa salsa de mango y aguacate. Una
-              experiencia tropical en cada bocado.
-            </div>
-            <div><span class="font-bold">Precio: </span>12.95€</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Burger del mes -->
+    <MenuBurgerDelMesComp :burgerData="burgerDelMes" />
+    <!-- Menu list -->
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-0"
     >
@@ -56,126 +18,22 @@
 </template>
 
 <script>
-import MenuBurgerComp from "../components/MenuBurgerComp.vue";
+import MenuBurgerComp from "../components/Pages/Carta/MenuBurgerComp.vue";
+import MenuBurgerDelMesComp from "../components/Pages/Carta/MenuBurgerDelMesComp.vue";
+import { burgersData } from "../data/burgers";
+import { burgerDelMesData } from "../data/burgerDelMes";
 
 export default {
   name: "CartaView",
   title: "Carta",
   components: {
     MenuBurgerComp,
+    MenuBurgerDelMesComp,
   },
   data() {
     return {
-      burgers: [
-        {
-          name: "Clásica",
-          ingredients:
-            "Carne de res, pan de hamburguesa, lechuga, tomate, cebolla, queso cheddar, kétchup, mostaza, mayonesa.",
-          description:
-            "La hamburguesa tradicional con carne jugosa, queso cheddar derretido y condimentos clásicos. Simplemente deliciosa.",
-          picture: "/img/carta/clasica.webp",
-          price: 11.95,
-        },
-        {
-          name: "BBQ",
-          ingredients:
-            "Carne de res, pan de hamburguesa, cebolla caramelizada, bacon, queso suizo, salsa BBQ.",
-          description:
-            "Una explosión de sabor con carne a la parrilla, cebolla caramelizada, bacon crujiente y salsa BBQ.",
-          picture: "/img/carta/bbq.webp",
-          price: 12.95,
-        },
-        {
-          name: "Pavo",
-          ingredients:
-            "Carne de pavo, pan integral, espinacas, tomate, aguacate, mayonesa de cilantro.",
-          description:
-            "Una opción más ligera con carne de pavo magra, aguacate cremoso y una mayonesa de cilantro refrescante.",
-          picture: "/img/carta/pavo.webp",
-          price: 12.95,
-        },
-        {
-          name: "Vegana de Garbanzos",
-          ingredients:
-            "Hamburguesa vegana de garbanzos, pan vegano, lechuga, tomate, pepinillos, salsa vegana.",
-          description:
-            "Una alternativa vegana sabrosa con una hamburguesa de garbanzos, vegetales frescos y salsa vegana.",
-          picture: "/img/carta/vegana-garbanzos.webp",
-          price: 13.95,
-        },
-        {
-          name: "Tex-Mex",
-          ingredients:
-            "Carne de res, pan de hamburguesa, guacamole, jalapeños, cebolla morada, queso pepper jack.",
-          description:
-            "Un toque picante con carne, guacamole cremoso, jalapeños y queso pepper jack fundido.",
-          picture: "/img/carta/texmex.webp",
-          price: 12.95,
-        },
-        {
-          name: "Ternera con Queso Azul",
-          ingredients:
-            "Carne de ternera, pan de hamburguesa, lechuga, tomate, cebolla caramelizada, queso azul, mayonesa de mostaza.",
-          description:
-            "Una combinación irresistible con carne de ternera jugosa, queso azul derretido, cebolla caramelizada y una mayonesa de mostaza que realza los sabores.",
-          picture: "/img/carta/ternera-queso-azul.webp",
-          price: 14.95,
-        },
-        {
-          name: "Pollo Picante",
-          ingredients:
-            "Pechuga de pollo, pan de hamburguesa, jalapeños en rodajas, lechuga, cebolla morada, salsa picante.",
-          description:
-            "Un toque de calor con pechuga de pollo a la parrilla, jalapeños y salsa picante.",
-          picture: "/img/carta/pollo-picante.webp",
-          price: 12.95,
-        },
-        {
-          name: "Champiñones Portobello",
-          ingredients:
-            "Champiñones Portobello, pan integral, espinacas, tomate, queso suizo, aioli de ajo asado.",
-          description:
-            "Una opción vegetariana con champiñones Portobello a la parrilla, queso suizo y aioli de ajo asado.",
-          picture: "/img/carta/champi-portobello.webp",
-          price: 11.95,
-        },
-        {
-          name: "Hawaiana",
-          ingredients:
-            "Carne de res, pan de hamburguesa, piña a la parrilla, jamón, queso suizo, salsa de piña y teriyaki.",
-          description:
-            "Un toque tropical con carne, piña a la parrilla, jamón, queso suizo y salsa de piña y teriyaki.",
-          picture: "/img/carta/hawaiana.webp",
-          price: 14.95,
-        },
-        {
-          name: "Mediterránea de Cordero",
-          ingredients:
-            "Carne de cordero, pan de pita, lechuga, tomate, cebolla roja, tzatziki.",
-          description:
-            "Sabores mediterráneos con carne de cordero, tzatziki fresco y vegetales crujientes.",
-          picture: "/img/carta/mediterranea-cordero.webp",
-          price: 15.95,
-        },
-        {
-          name: "Vegana de Avena y Lentejas",
-          ingredients:
-            "Hamburguesa vegana de avena y lentejas, pan vegano, espinacas, tomate, cebolla caramelizada, mayonesa vegana.",
-          description:
-            "Una opción vegana con una hamburguesa de avena y lentejas, cebolla caramelizada y mayonesa vegana.",
-          picture: "/img/carta/vegana-avena-lentejas.webp",
-          price: 13.95,
-        },
-        {
-          name: "Pato a la Naranja",
-          ingredients:
-            "Confit de pato, pan de hamburguesa de brioche, rúcula, naranja confitada, salsa de naranja agridulce.",
-          description:
-            "Un toque gourmet con confit de pato, naranja confitada y una deliciosa salsa de naranja agridulce.",
-          picture: "/img/carta/pato-naranja.webp",
-          price: 15.95,
-        },
-      ],
+      burgers: burgersData,
+      burgerDelMes: burgerDelMesData,
     };
   },
 };

@@ -5,7 +5,7 @@
     >
       <div class="w-full lg:w-2/3">
         <img
-          src="/img/burgers/burgerDelMes.webp"
+          :src="burgerDelMes.picture"
           alt="burgerDelMes"
           class="object-cover w-full"
         />
@@ -18,7 +18,7 @@
           Burger del mes
         </div>
 
-        <div class="">Hamburguesa de Pollo con Salsa de Mango y Aguacate</div>
+        <div class="">{{ burgerDelMes.name }}</div>
       </div>
     </div>
 
@@ -26,14 +26,9 @@
       class="p-4 mx-auto lg:max-w-5xl max-w-full border-4 border-white bg-white bg-opacity-90 w-full items-center justify-center space-y-4 h-full"
     >
       <div>
-        Disfruta de una jugosa hamburguesa de pollo o nuestra opción
-        vegetariana, ambas con nuestra deliciosa salsa de mango y aguacate.
-        Preparadas con pechuga de pollo o una alternativa vegetariana sazonada
-        con comino y pimentón, servidas en un pan integral. Acompañadas de hojas
-        de lechuga, tomate y cebolla roja. Una experiencia tropical en cada
-        bocado.
+        {{ burgerDelMes.description }}
       </div>
-      <div><span class="font-bold">Precio: </span>12.95€</div>
+      <div><span class="font-bold">Precio: </span>{{ burgerDelMes.price }}</div>
     </div>
 
     <div
@@ -45,13 +40,19 @@
 </template>
 
 <script>
-import ButtonComp from "../components/ButtonComp.vue";
+import ButtonComp from "../components/Common/ButtonComp.vue";
+import { burgerDelMesData } from "../data/burgerDelMes";
 
 export default {
   name: "BurgerDelMesView",
   title: "BurgerDelMes",
   components: {
     ButtonComp,
+  },
+  data() {
+    return {
+      burgerDelMes: burgerDelMesData,
+    };
   },
 };
 </script>

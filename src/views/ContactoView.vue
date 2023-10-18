@@ -51,7 +51,7 @@
             <div class="text-center">
               <button
                 type="submit"
-                class="text-lg md:text-lg border-4 font-condensed text-2xl uppercase py-2 px-4 font-bold transition-colors duration-200"
+                class="md:text-lg border-4 font-condensed text-2xl uppercase py-2 px-4 font-bold transition-colors duration-200"
                 :class="
                   status === 'submitting'
                     ? 'border-gray-500 bg-gray-500 text-gray-300'
@@ -103,7 +103,7 @@
 </template>
 
 <script>
-import TitleComp from "../components/TitleComp.vue";
+import TitleComp from "../components/Common/TitleComp.vue";
 
 export default {
   name: "ContactoCompView",

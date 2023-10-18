@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ButtonCompVue from "./ButtonComp.vue";
+import ButtonCompVue from "../../Common/ButtonComp.vue";
 
 export default {
   name: "Content1",
