@@ -12,7 +12,7 @@
       class="flex flex-col items-top justify-between bg-white gap-0 sm:gap-2 px-2 py-4 space-y-2"
     >
       <div
-        class="text-sky-700 font-bold text-left font-condensed text-2xl md:text-xl uppercase break-words"
+        class="text-sky-700 font-bold text-center font-condensed text-2xl md:text-xl uppercase break-words"
       >
         {{ burger.name }}
       </div>
