@@ -16,7 +16,7 @@
       >
         {{ burger.name }}
       </div>
-      <div class="text-base md:text-base">
+      <div class="text-base md:text-base mx-auto">
         <span class="font-semibold bg-sky-700 text-white px-2 py-1">
           {{ burger.price }}€
         </span>
